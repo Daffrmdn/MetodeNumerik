@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+# Metode Lagrange:
 def lagrange(x, y, t):
     z = 0
     for i in range(len(y)):
@@ -21,6 +22,7 @@ for i in range(4, 6):
     print(f"Interpolasi polinom derajat {i-1}: {z}") 
     
 
+# Metode Newton:
 def newton(x, y, t):
     n = len(x)
     a = y.copy()
